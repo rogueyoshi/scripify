@@ -12,7 +12,8 @@ var zip_code;
 document.addEventListener("DOMContentLoaded", function(){
 	topAppBar = new mdc.topAppBar.MDCTopAppBar(document.querySelector('.mdc-top-app-bar'));
 
-	patients_name = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#patients_name'));
+	first_name = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#first_name'));
+	last_name = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#last_name'));
 	//patients_name_icon = new mdc.textField.MDCTextFieldIcon(document.querySelector('.mdc-text-field#patients_name .mdc-text-field__icon'));
 	dob = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#dob'));
 	phone = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#phone'));
