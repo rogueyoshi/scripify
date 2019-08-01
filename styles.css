@@ -6,31 +6,3 @@ body {
 	display: flex;
     margin: 1em auto;
 }
-
-#patients_name {
-	flex: 5;
-}
-
-#dob {
-	flex: 2;
-}
-
-#phone {
-	flex: 3;
-}
-
-#address {
-	flex: 5;
-}
-
-#city {
-	flex: 2;
-}
-
-#state {
-	flex: 1;
-}
-
-#zip_code {
-	flex: 2;
-}
