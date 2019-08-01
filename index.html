@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- TODO: use deferred loading !-->
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -93,10 +94,75 @@
 							</div>
 							
 							<div class="mdc-text-field mdc-layout-grid__cell mdc-layout-grid__cell--span-2" id="zip_code">
-								<input type="text" class="mdc-text-field__input" id="input-zip_code" name="zip_"/>
-								<label class="mdc-floating-label" for="input-zip_code">Zip</label>
+								<input type="text" class="mdc-text-field__input" id="input-zip_code" name="zip_code"/>
+								<label class="mdc-floating-label" for="input-zip_code">Zip Code</label>
 								<div class="mdc-line-ripple"></div>
 							</div>
+							
+							<div class="mdc-text-field mdc-layout-grid__cell mdc-layout-grid__cell--span-4" id="zip_code">
+								<input type="text" class="mdc-text-field__input" id="input-zip_code" name="zip_code"/>
+								<label class="mdc-floating-label" for="input-zip_code">Insurance Carrier</label>
+								<div class="mdc-line-ripple"></div>
+							</div>
+
+							<div class="mdc-form-field mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+								<span class="mdc-typography--subtitle1">Type</span>
+								<div class="mdc-radio">
+									<input class="mdc-radio__native-control" type="radio" id="radio-type_auto" name="type_auto" checked>
+									<div class="mdc-radio__background">
+									<div class="mdc-radio__outer-circle"></div>
+									<div class="mdc-radio__inner-circle"></div>
+									</div>
+								</div>
+								<label for="type-auto">Auto</label>
+								<div class="mdc-radio">
+									<input class="mdc-radio__native-control" type="radio" id="radio-type_wc" name="type_wc">
+									<div class="mdc-radio__background">
+									<div class="mdc-radio__outer-circle"></div>
+									<div class="mdc-radio__inner-circle"></div>
+									</div>
+								</div>
+								<label for="radio-type_wc">WC</label>
+								<div class="mdc-radio">
+									<input class="mdc-radio__native-control" type="radio" id="radio-type_other" name="type_other">
+									<div class="mdc-radio__background">
+									<div class="mdc-radio__outer-circle"></div>
+									<div class="mdc-radio__inner-circle"></div>
+									</div>
+								</div>
+								<label for="radio-type_other">Other</label>
+							</div>
+
+							<div class="mdc-text-field mdc-layout-grid__cell mdc-layout-grid__cell--span-4" id="zip_code">
+								<input type="text" class="mdc-text-field__input" id="input-zip_code" name="zip_code"/>
+								<label class="mdc-floating-label" for="input-zip_code">Policy/Claim #</label>
+								<div class="mdc-line-ripple"></div>
+							</div>
+
+							<div class="mdc-text-field mdc-layout-grid__cell mdc-layout-grid__cell--span-4" id="doi">
+								<input type="text" class="mdc-text-field__input" id="input-doi" name="doi"/>
+								<label class="mdc-floating-label" for="input-doi">DOI (WC/NF)</label>
+								<div class="mdc-line-ripple"></div>
+							</div>
+
+							<div class="mdc-text-field mdc-layout-grid__cell mdc-layout-grid__cell--span-4" id="icd_10">
+								<input type="text" class="mdc-text-field__input" id="input-icd_10" name="icd_10"/>
+								<label class="mdc-floating-label" for="input-icd_10">ICD-10 Code(s)</label>
+								<div class="mdc-line-ripple"></div>
+							</div>
+
+							<div class="mdc-text-field mdc-layout-grid__cell mdc-layout-grid__cell--span-4" id="adjuster">
+								<input type="text" class="mdc-text-field__input" id="input-adjuster" name="adjuster"/>
+								<label class="mdc-floating-label" for="input-adjuster">Adjuster (WC)</label>
+								<div class="mdc-line-ripple"></div>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend class="mdc-typography--headline6">Lower Extremity</legend>
+					<div class="mdc-layout-grid">
+						<div class="mdc-layout-grid__inner">
 						</div>
 					</div>
 				</fieldset>
@@ -117,5 +183,11 @@
 		var city = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#city'));
 		var state = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#state'));
 		var zip_code = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#zip_code'));
+
+		var doi = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#doi'));
+		var state = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#icd_10'));
+		var adjuster = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#adjuster'));
+		
+		
 	</script>
 </html>
