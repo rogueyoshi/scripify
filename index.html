@@ -21,10 +21,13 @@
 		<script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		
-		<link rel="stylesheet" href="./index.css">
-		<script type="text/javascript" src="./index.js"></script>
 	</head>
+	
+	<style>
+		body {
+		  margin: 0;
+		}
+	</style>
 	
 	<body class="mdc-typography">
 		<header class="mdc-top-app-bar mdc-top-app-bar--fixed">
@@ -100,4 +103,19 @@
 			</form>
 		</div>
 	</body>
-	</html>
+	
+	<script>
+		var topAppBar = new mdc.topAppBar.MDCTopAppBar(document.querySelector('.mdc-top-app-bar'));
+
+		var first_name = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#first_name'));
+		var last_name = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#last_name'));
+		//patients_name_icon = new mdc.textField.MDCTextFieldIcon(document.querySelector('.mdc-text-field#patients_name .mdc-text-field__icon'));
+		var dob = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#dob'));
+		var phone = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#phone'));
+		
+		var address = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#address'));
+		var city = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#city'));
+		var state = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#state'));
+		var zip_code = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#zip_code'));
+	</script>
+</html>
