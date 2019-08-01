@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	
 	address = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#address'));
 	city = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#city'));
-	phone = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#phone'));
+	state = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#state'));
 	zip_code = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#zip_code'));
 	
 	console.log('done');
