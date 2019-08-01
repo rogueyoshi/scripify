@@ -1,11 +1,26 @@
-	var topAppBar = new mdc.topAppBar.MDCTopAppBar(document.querySelector('.mdc-top-app-bar'));
+var topAppBar;
 
-	var patients_name = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#patients_name'));
-	//var patients_name_icon = new mdc.textField.MDCTextFieldIcon(document.querySelector('.mdc-text-field#patients_name .mdc-text-field__icon'));
-	var dob = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#dob'));
-	var phone = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#phone'));
+var patients_name;
+var dob;
+var phone;
+
+var address;
+var city;
+var phone;
+var zip_code;
+
+document.addEventListener("DOMContentLoaded", function(){
+	topAppBar = new mdc.topAppBar.MDCTopAppBar(document.querySelector('.mdc-top-app-bar'));
+
+	patients_name = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#patients_name'));
+	//patients_name_icon = new mdc.textField.MDCTextFieldIcon(document.querySelector('.mdc-text-field#patients_name .mdc-text-field__icon'));
+	dob = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#dob'));
+	phone = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#phone'));
 	
-	var address = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#address'));
-	var city = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#city'));
-	var phone = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#phone'));
-	var zip_code = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#zip_code'));
+	address = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#address'));
+	city = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#city'));
+	phone = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#phone'));
+	zip_code = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#zip_code'));
+	
+	console.log('done');
+});

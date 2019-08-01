@@ -3,7 +3,7 @@
     "short_name": "Scripify",
     "display": "standalone",
     "start_url": "/scripify",
-    "scope": "/scripify/",
+    "scope": "/scripify",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "icons": [
