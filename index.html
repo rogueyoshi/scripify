@@ -622,5 +622,14 @@
 		var doi = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#doi'));
 		var state = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#icd_10'));
 		var adjuster = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field#adjuster'));
+				
+		var deferredPrompt;
+
+		window.addEventListener('beforeinstallprompt', (e) => {
+		  // Stash the event so it can be triggered later.
+		  deferredPrompt = e;
+		  // Update UI notify the user they can add to home screen
+		  showInstallPromotion();
+		});
 	</script>
 </html>
