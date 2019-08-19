@@ -26,7 +26,26 @@
 	
 	<style>
 		body {
+		  padding: 0;
 		  margin: 0;
+		}
+		
+		.mdc-top-app-bar .mdc-tab__text-label,
+		.mdc-top-app-bar .mdc-tab__icon {
+		  color: #fff;
+		}
+
+		.mdc-tab--active .mdc-tab__text-label,
+		.mdc-tab--active .mdc-tab__icon {
+		  color: rgba(0, 0, 0, 0.6);
+		}
+		
+		.mdc-tab-indicator .mdc-tab-indicator__content--underline {
+			border-color: rgba(0, 0, 0, 0.6);
+		}
+		
+		.mdc-top-app-bar--fixed-adjust {
+			padding-top: 104px;
 		}
 		
 		.content {
@@ -50,9 +69,6 @@
 			  <button class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Print">print</button>
 			</section>
 		  </div>
-		</header>
-		
-		<div class="mdc-top-app-bar--fixed-adjust">
 			<div class="mdc-tab-bar" role="tablist">
 			  <div class="mdc-tab-scroller">
 				<div class="mdc-tab-scroller__scroll-area">
@@ -88,6 +104,9 @@
 				</div>
 			  </div>
 			</div>
+		</header>
+		
+		<div class="mdc-top-app-bar--fixed-adjust">
 			<div class="content content--active">
 				<form>
 					<fieldset>
@@ -225,7 +244,7 @@
 								<div class ="mdc-layout-grid__cell mdc-layout-grid__cell--span-12" id="organswrapper">
 									<div id="frt_base">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 800 1360" xml:space="preserve">
-											<image overflow="visible" width="800" height="1360" xlink:href="https://www.humananatomyillustrations.com/assets/images/demo/male-front.png" ></image>
+											<image overflow="visible" width="100%" height="100%" xlink:href="https://www.humananatomyillustrations.com/assets/images/demo/male-front.png" ></image>
 											<path id="frt_1" d="M456.334,69C454.668,37,420,18,401,18c-30.833,0-50.167,31.5-53.167,44.5c-1.915,8.295-2.833,23.5-2.5,28.167s1,12.333,0.667,16.167c2.04,7.695,6.667,23,6.667,33c0.667,5.167,1.167,12.5,3.333,18.833c3,4,22.5,23.333,44.167,23.333s36.5-8.667,45.708-23c2.625-5.625,5-15.25,4.75-18.625c-0.708-5.125,4.708-28.042,5.709-32.708C457.001,100.334,458,101,456.334,69z"/>
 											<path id="frt_2" d="M378.5,101.25c8.561,0,15.5-4.197,15.5-9.375s-6.939-9.375-15.5-9.375c-9.75,0-15.5,4.197-15.5,9.375S369.939,101.25,378.5,101.25z"/>
 											<path id="frt_3" d="M426.5,101.25c8.561,0,15.5-4.197,15.5-9.375s-5.5-9.375-15.5-9.375c-8.561,0-15.5,4.197-15.5,9.375S417.939,101.25,426.5,101.25z"/>
@@ -269,7 +288,7 @@
 
 									<div id="bck_base">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 800 1360" xml:space="preserve">
-											<image overflow="visible" width="800" height="1360" xlink:href="https://www.humananatomyillustrations.com/assets/images/demo/male-back.png" ></image>
+											<image overflow="visible" width="100%" height="100%" xlink:href="https://www.humananatomyillustrations.com/assets/images/demo/male-back.png" ></image>
 											<path id="bck_1" d="M450.806,154.076c3.058-18.988,9.442-66.107,10.527-83.743C462.666,48.667,432.333,15,400,15c-27.334,0-58.5,32-58,52.667c0.19,7.875,2,33,2.333,36.333c0.239,2.389,4.332,32.016,7.459,49.645C362,174.667,440.611,174.486,450.806,154.076z"/>
 											<path id="bck_2" d="M497.833,226c-28-9.5-48.999-27.333-49.999-29.5s0.166-30.667,1.5-34.5c0.248-0.713,0.773-3.584,1.472-7.924c-10.194,20.41-88.806,20.59-99.013-0.432c1.235,6.962,2.32,12.053,2.957,12.855c1.555,1.958,2.93,28.364,0.5,31.5c-7.805,10.073-31.475,20.792-49.208,27.5C327.75,219.5,479.908,222.22,497.833,226z"/>
 											<path id="bck_3" d="M539,351c2.836-16.7,6.265-36.969,4.098-48.71c-0.126-0.68-0.267-1.336-0.431-1.956c-3-11.333-7.667-52-44.834-74.333c-17.925-3.78-170.083-6.5-191.792-0.5c-39.458,21.5-44.542,68.75-45.542,74.5s0.5,26.25,2.25,36.75s8.25,29.583,4.625,66.375c1.125,0,1.5,3.5,1.875,6.125s4.25,16.75,9.25,23s9.25,25,13.25,32.5c4.468,5.507,41.373,10.639,83.746,11.485c9.657,0.193,19.599-1.733,29.504-1.776c9.978-0.044,19.919,1.793,29.499,1.512c39.579-1.163,72.98-6.345,77.196-11.47c2.613-5.708,6.414-14.637,7.473-18.167c1.5-5,2.666-9.167,4.833-12.667s7.833-18.083,8.666-21.083s2.167-9.417,3.334-9.5C535,387.667,536,368.667,539,351z"/>
