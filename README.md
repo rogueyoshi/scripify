@@ -1,2 +1,3 @@
 # scripify
-Prescription filling app demo.
+
+A mobile app for doctors to file prescriptions for patients, using Google Material Design Components (Demo).
